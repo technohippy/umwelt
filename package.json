@@ -1,0 +1,27 @@
+{
+  "name": "umwelt",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "browser-sync start --server --port 3456 --ui-port 3457 --files='./*.html, ./js/*.js, ./style/*.css'",
+    "start:dev": "ruby -rwebrick -rwebrick/https -e 'WEBrick::HTTPServer.new(:DocumentRoot => \"./\", :Port => 8443, :SSLEnable => true, :SSLCertName => [[\"CN\", WEBrick::Utils::getservername]] ).start'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/technohippy/umwelt.git"
+  },
+  "author": "Yasushi Ando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technohippy/umwelt/issues"
+  },
+  "homepage": "https://github.com/technohippy/umwelt#readme",
+  "dependencies": {
+    "three": "^0.124.0"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "browser-sync": "^2.26.13"
+  }
+}
